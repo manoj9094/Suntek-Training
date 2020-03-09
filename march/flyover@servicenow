@@ -1,0 +1,20 @@
+n=int(input())
+a=list(map(int,input().strip().split()))[:n]
+b=list(map(int,input().strip().split()))[:n]
+c=0
+f=0
+for k in range(n):
+	f=0
+	for i in range(k):
+		for j in range(n):
+			if a[k]==b[j]:
+				for g in range(j+1,n):
+					if a[i]==b[g]:
+						c=c+1
+						f=1
+						break
+			if f==1:
+				break
+		if f==1:
+			break
+print(c)

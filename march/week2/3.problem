@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	int n =s.nextInt();
+	int c=0;
+	List<Integer> m=new LinkedList<>();
+	for(int i=0;i<n;i++)
+	    m.add(s.nextInt());
+	int k=s.nextInt();
+	for(int i=0;i<n;i++)
+	if(m.get(i)==k)
+	    c++;
+	System.out.println(c);
+	}
+}
